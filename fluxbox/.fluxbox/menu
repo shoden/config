@@ -1,0 +1,124 @@
+[begin] (debian)
+  [exec] (terminal) {terminator}
+  [exec] (explorador) {pcmanfm}
+  [separator]
+  [submenu] (desarrollo)
+    [exec] (Manpages editor) {gmanedit}
+    [exec] (Qt Creator) {qtcreator}
+    [exec] (Qt Designer) {designer-qt4}
+    [exec] (Qt Linguist) {linguist-qt4}
+  [end]
+  [submenu] (internet)
+    [exec] (conferencia) {skype}
+    [exec] (correo) {thunderbird}
+    [exec] (ftp) {filezilla}
+    [exec] (mensajería) {pidgin}
+    [exec] (noticias) {liferea}
+    [exec] (second life) {sl}
+    [exec] (torrent) {transmission}
+    [exec] (web) {firefox}
+  [end]
+  [submenu] (multimedia)
+      [exec] (diagramas) {dia}
+      [exec] (dibujo vectorial) {inkscape}
+      [exec] (el tarado) {gimp}
+      [exec] (mapa conceptual) {freemind}
+      [separator]
+      [exec] (música) {rhythmbox}
+      [exec] (fotomatón) {cheese}
+      [exec] (guitarra) {tuxguitar}
+      [exec] (vídeo) {vlc}
+      [exec] (webcam) {ucview}
+      [separator]
+      [exec] (conversor de audio) {soundconverter}
+      [exec] (conversor de vídeo) {winff}
+      [exec] (editor de etiquetas de audio) {easytag}
+      [exec] (grabación de sonido) {audacity}
+      [exec] (pizarra) {mando}
+      [separator]
+      [exec] (editor de partituras) {noteedit}
+  [end]
+  [submenu] (ocio)
+    [exec] (scummvm) {scummvm}
+    [exec] (supertuxkart) {supertuxkart}
+  [end]
+  [submenu] (oficina)
+    [exec] (editor de texto) {geany}
+    [exec] (LaTeX) {kile}
+    [exec] (libro electrónico) {fbreader}
+    [exec] (ofimática) {openoffice.org3}
+  [end]
+  [submenu] (uco)
+    [exec] (sicome) {/usr/bin/sicome}
+  [end]
+  [submenu] (servidores)
+    [submenu] (agente ssh)
+      [exec] (añadir identidad) {ssh-add}
+      [exec] (eliminar identidad) {ssh-add -d}
+    [end]
+    [submenu] (bluetooth)
+      [exec] (iniciar) {gksu /etc/init.d/bluetooth start}
+      [exec] (parar) {gksu /etc/init.d/bluetooth stop}
+    [end]
+    [submenu] (impresión)
+      [exec] (iniciar) {gksu /etc/init.d/cups start}
+      [exec] (parar) {gksu /etc/init.d/cups stop}
+    [end]
+    [submenu] (midi)
+      [exec] (iniciar) {gksu /etc/init.d/timidity start}
+      [exec] (parar) {gksu /etc/init.d/timidity stop}
+    [end]
+    [submenu] (web)
+      [exec] (iniciar) {gksu /etc/init.d/apache2 start && gksu /etc/init.d/mysql start}
+      [exec] (parar) {gksu /etc/init.d/apache2 stop && gksu /etc/init.d/mysql stop}
+    [end]
+    [submenu] (ssh)
+      [exec] (iniciar) {gksu /etc/init.d/ssh start}
+      [exec] (parar) {gksu /etc/init.d/ssh stop}
+    [end]
+  [end]
+  [submenu] (seguridad)
+    [exec] (escáner de puertos) {zenmap}
+    [exec] (escáner de puertos -root-) {gksu zenmap}
+    [exec] (wifi) {qaircrack}
+  [end]
+  [submenu] (sistema)
+    [exec] (impresoras) {gksu system-config-printer}
+    [exec] (iso a usb) {gksu unetbootin}
+    [exec] (paquetes) {gksu synaptic}
+    [exec] (particiones) {gksu gparted}
+  [end]
+  [submenu] (utilidades)
+    [exec] (atajos de teclado) {fluxkeys}
+    [exec] (bluetooth - enviar archivo) {bluetooth-sendto}
+    [exec] (calculadora) {xcalc}
+    [exec] (captura pantalla) {/usr/bin/gnome-panel-screenshot}
+    [exec] (compartir teclado y ratón) {quicksynergy}
+    [exec] (configurar fluxbox) {fluxconf}
+    [exec] (contraseñas) {password-gorilla}
+    [exec] (dispositivos) {gnome-device-manager}
+    [exec] (contraseñas 2) {keepassx}
+    [exec] (grabar escritorio) {gtk-recordMyDesktop}
+    [exec] (monitor) {grandr}
+    [exec] (reconocimiento de escritura) {cellwriter}
+    [exec] (red) {wicd}
+    [exec] (uso de disco) {filelight}
+    [submenu] (salvapantallas)
+      [exec] (habilitar) {xset s on}
+      [exec] (deshabilitar) {xset s off}
+    [end]
+    [submenu] (virtualización)
+      [exec] (virtualbox) {virtualbox}
+      [exec] (lenny) {virtualbox --startvm Lenny}
+    [end]
+    [exec] (volumen) {terminator -e alsamixer}
+  [end]
+  [separator]
+  [submenu] (salir)
+    [exit] (salir)
+    [restart] (reiniciar fluxbox)
+    [exec] (reiniciar) {gksu /sbin/shutdown -r now}
+    [exec] (apagar) {gksu /sbin/shutdown -h now}
+  [end]
+
+[end]

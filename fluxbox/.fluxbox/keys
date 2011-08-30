@@ -1,0 +1,56 @@
+!Eventos de ratón
+OnTitlebar Mouse2 :StartTabbing
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing BottomRight}
+OnToolbar Mouse4 :NextWorkspace
+OnToolbar Mouse5 :PrevWorkspace
+OnDesktop Mouse1 :HideMenus
+OnDesktop Mouse2 :WorkspaceMenu
+OnDesktop Mouse3 :RootMenu
+OnDesktop Mouse4 :NextWorkspace
+OnDesktop Mouse5 :PrevWorkspace
+
+!Ventanas
+Mod1 Tab :NextWindow
+Mod1 Shift Tab :PrevWindow
+Mod1 F2 :Exec fbrun -font sans-9 -pos 550 350 -bg black -fg grey -title Ejecutar
+Control Mod1 Right :NextWorkspace
+Control Mod1 Left :PrevWorkspace
+Mod1 F11 :Maximize
+Mod1 F4 :Close
+Shift Left :PrevTab
+Shift Right :NextTab
+Mod4 F1 :RootMenu
+Mod1 F10 :MacroCmd {MoveTo 1 1} {ResizeTo 1012 744}
+
+!Bloquear pantalla
+None 78 :Exec xtrlock
+
+!Teclas multimedia
+None 123 :ExecCommand volumen + &
+None 122 :ExecCommand volumen - &
+None 160 :ToggleCmd {rhythmbox-client --mute} {rhythmbox-client --unmute}
+Mod4 Insert :Exec /usr/bin/gnome-panel-screenshot
+None Scroll_Lock: :Exec glxgears
+None 107 :Exec gnome-panel-screenshot
+
+!Mis aplicaciones
+F1     :Exec terminator
+Mod4 c :Exec thunderbird
+Mod4 d :ToggleCmd {ShowDesktop} {DeIconify all originquiet}
+Mod4 g :Exec google-chrome
+Mod4 h :Exec pcmanfm
+Mod4 l :Exec kile
+Mod4 m :Exec rhythmbox
+Mod4 n :Exec liferea
+Mod4 p :Exec gksu synaptic
+Mod4 s :Exec ssh-add
+Mod4 t :Exec transmission
+Mod4 v :Exec gnome-terminal -e alsamixer
+Mod4 w :Exec firefox
+
+!Pruebas
+Control Mod1 BackSpace :Exec glxgears
+Control Mod1 F1 :Exec xclock

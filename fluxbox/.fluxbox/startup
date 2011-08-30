@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# keymap
+xmodmap "$HOME/.Xmodmap"
+
+# lock keyboard and mouse
+xtrlock &
+
+# background
+fbsetbg -f $HOME/.fluxbox/backgrounds/holocaust.jpg &
+
+# power management
+xfce4-power-manager &
+
+# network manager
+nm-applet &
+#wicd-client &
+
+# touchpad
+synclient TapButton1=1 &
+
+# fluxbox
+exec fluxbox
+# exec fluxbox -log "$HOME/.fluxbox/log"
