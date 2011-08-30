@@ -1,0 +1,36 @@
+[user]
+  name = Juan Roldan Ruiz
+  email = juan@shoden.es
+
+[core]
+  editor = vim
+
+[alias]
+  a = add .
+  b = branch
+  cm = commit
+  cmm = commit -m
+  co = checkout
+  cp = cherry-pick
+  d = diff
+  l = log --graph --decorate --abbrev-commit -10
+  mg = merge
+  pl = pull origin master
+  ps = push origin master
+  rb = rebase
+  rs = reset
+  s = status
+  st = stash
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+
+[format]
+  pretty = oneline
+
+[merge]
+  tool = meld
