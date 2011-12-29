@@ -1,6 +1,6 @@
 [user]
   name = Juan Roldan Ruiz
-  email = juan@shoden.es
+  email = juan.roldan@gmail.com
 
 [core]
   editor = vim
@@ -13,12 +13,12 @@
   co = checkout
   cp = cherry-pick
   d = diff
-  l = log --graph --decorate --abbrev-commit -10
+  l = log --graph --decorate --abbrev-commit -20 --all
   mg = merge
   pl = pull origin master
   ps = push origin master
   rb = rebase
-  rs = reset
+  rs = reset --soft
   s = status
   st = stash
 
@@ -33,4 +33,6 @@
   pretty = oneline
 
 [merge]
-  tool = meld
+#  tool = meld
+[diff]
+#	external = /home/juan/bin/diff.py
