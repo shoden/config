@@ -8,6 +8,7 @@ alias v='vim -p'
 alias sv='sudo vim -p'
 alias t='tree'
 alias tt='tree -a'
+alias n='nautilus . &'
 
 alias ..="cd .."
 alias ...="cd ../.."
