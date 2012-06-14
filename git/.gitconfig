@@ -21,6 +21,9 @@
   rs = reset --soft
   s = status
   st = stash
+  stl = stash list
+  stp = stash pop
+  t = tag
 
 [color]
   diff = auto
@@ -33,6 +36,6 @@
   pretty = oneline
 
 [merge]
-#  tool = meld
+  tool = meld
 [diff]
-#	external = /home/juan/bin/diff.py
+	external = meld.py
